@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"; // Thư viện React
+
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // Thư viện react router
+
+// Gọi các component
+import MovieProvider from "./movies/MovieProvider";
+import Browse from "./pages/browse/Browse";
+import Search from "./pages/search/Search";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MovieProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Browse />} />
+          <Route path="/search" element={<Search />} />
+        </Routes>
+      </BrowserRouter>
+    </MovieProvider>
   );
 }
 

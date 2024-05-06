@@ -1,0 +1,59 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-color: rgb(125, 76, 76);
+
+  .content {
+    position: absolute;
+    left: 2rem;
+    bottom: 4rem;
+    width: 40%;
+    /* text-align: justify; */
+
+    h1 {
+      color: white;
+      margin-bottom: 25px;
+      /* mix-blend-mode: difference; */
+    }
+
+    .control {
+      display: flex;
+      gap: 15px;
+    }
+
+    button {
+      border: none;
+      padding: 6px 30px;
+      border-radius: 5px;
+      background-color: rgba(88, 88, 88, 0.503);
+      color: white;
+      margin-bottom: 15px;
+
+      cursor: pointer;
+    }
+
+    p {
+      color: white;
+      max-height: calc(1.5em * 2); /* Chiều cao tối đa là 3 dòng */
+      overflow: hidden; /* Ẩn phần nội dung dài hơn */
+      line-height: 1.5em; /* Độ cao của mỗi dòng */
+      text-overflow: ellipsis; /* Thay thế dấu ... cho phần nội dung dài hơn */
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      /* mix-blend-mode: difference; */
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 600px;
+
+    .content {
+      width: 80%;
+    }
+  }
+}

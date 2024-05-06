@@ -1,0 +1,40 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+
+  transition: background-color 0.5s ease; /* Thiết lập transition cho background color */
+  z-index: 10;
+}
+
+/* Màu trong suốt */
+.nav.transparent {
+  background-color: rgba(0, 0, 0, 0); /* Màu trong suốt */
+}
+
+/* Màu đen */
+.nav.black {
+  background-color: rgba(0, 0, 0, 0.7); /* Màu đen */
+}
+
+.nav .logo a {
+  color: red;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav .search {
+  width: 25px;
+}
+
+/* Reponsive */
+@media screen and (max-width: 768px) {
+  /* .nav {
+    flex-direction: column;
+  } */
+}

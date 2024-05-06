@@ -1,0 +1,73 @@
+/* Info */
+.movie_info {
+  margin: 4rem 2rem 3rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  word-wrap: break-word;
+
+  /* Content */
+  .content {
+    max-width: 100%;
+    word-wrap: break-word;
+
+    /* tieu de */
+    h2 {
+      display: block;
+      padding-bottom: 3rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid white;
+
+      text-transform: capitalize;
+    }
+
+    /* date */
+    .date {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    /* vote */
+    .vote {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    /* paragrap */
+    p {
+    }
+  }
+
+  /* Video */
+  .video_item {
+    width: 100%;
+    height: 380px;
+  }
+
+  /* Image */
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .movie_info {
+    grid-template-columns: 1fr;
+
+    .video_item {
+      width: 100%;
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie_info {
+    .video_item {
+      height: 250px;
+    }
+  }
+}

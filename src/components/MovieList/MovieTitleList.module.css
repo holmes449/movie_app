@@ -1,0 +1,55 @@
+/* Tiêu đề */
+.title_movie_title {
+  font-size: 22px;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  font-weight: 400;
+}
+
+.movie_title {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  margin-left: 2rem;
+  max-height: 400px; /* Đặt chiều cao cố định cho container */
+
+  overflow-x: auto; /* Hiển thị thanh cuộn ngang khi cần */
+  overflow-y: hidden; /* Ẩn thanh cuộn dọc */
+
+  /* Danh sách có scroll */
+  .list_title {
+    margin-left: 2rem;
+    display: flex;
+    gap: 10px;
+  }
+}
+
+/* Scroll */
+.movie_title::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #11171a; /* Màu nền của thanh cuộn */
+  /* cursor: pointer; */
+}
+
+.movie_title::-webkit-scrollbar-thumb {
+  background-color: #292929; /* Màu của thanh cuộn */
+  border-radius: 6px; /* Bo tròn góc của thanh cuộn */
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+  .movie_title {
+    /* Danh sách có scroll */
+    .list_title {
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie_title {
+    /* Danh sách có scroll */
+    .list_title {
+    }
+  }
+}

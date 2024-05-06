@@ -1,0 +1,31 @@
+.movie_item {
+}
+
+.image_zoom {
+  flex: 0 0 auto; /* Không co giãn item */
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Hiệu ứng phóng to */
+}
+
+.image_zoom:hover {
+  transform: scale(1.15); /* Phóng to khi hover */
+  cursor: pointer;
+}
+
+/* Tablet */
+@media screen and (max-width: 1080px) {
+  .image_zoom {
+    width: 330px;
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .image_zoom {
+    width: 400px;
+    height: auto;
+  }
+}

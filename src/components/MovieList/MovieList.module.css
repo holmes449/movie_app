@@ -1,0 +1,30 @@
+.movie_list {
+  padding: 3rem 2rem;
+  margin-bottom: 4rem;
+
+  /* Danh sách origin không scroll */
+  .list_origin {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Hiển thị theo hàng ngang */
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .movie_list {
+    /* Danh sách origin không scroll */
+    .list_origin {
+      gap: 20px;
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie_list {
+    /* Danh sách origin không scroll */
+    .list_origin {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

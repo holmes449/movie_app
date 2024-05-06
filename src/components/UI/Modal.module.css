@@ -1,0 +1,58 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(1, 1, 1, 0.6);
+  /* background-color: #081425a2; */
+
+  z-index: 10;
+
+  /* Nút x */
+  .btn_close {
+    position: absolute;
+    top: 7rem;
+    right: 10rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    i {
+      color: #dc3545;
+      font-size: 4rem;
+    }
+
+    i:hover {
+      color: #6c757d;
+    }
+  }
+
+  /* Nội dung nằm giữa */
+  .box_modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(0, 0, 0, 0.955);
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 1080px) {
+  .modal {
+    /* Nội dung nằm giữa */
+    .box_modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 70%;
+
+      background-color: rgba(0, 0, 0, 0.955);
+    }
+  }
+}

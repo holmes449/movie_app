@@ -1,0 +1,38 @@
+/* Kết quả tìm kiếm */
+.result {
+  margin: 0 20px 50px 20px;
+  /* Tiêu đề */
+  h2 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  /* Danh sách trả về */
+  .result_list {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    margin: 0 40px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 1080px) {
+  .result {
+    /* Danh sách trả về */
+    .result_list {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .result {
+    /* Danh sách trả về */
+    .result_list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
